@@ -85,17 +85,17 @@ class TestEducation(BaseClass):
         ff = Home.clickfirstast().text
         assert "Meta Front-End Developer" in ff
 
-        ss = Home.clicknd().text
-        assert "IBM Full Stack Software Developer" in ss
-
         #ss = Home.clicknd().text
         #assert "IBM Full Stack Software Developer" in ss
-        #ss = Home.clicknd().text
-        #if ss == "IBM Full Stack Software Developerr":
-            #assert True
-        #else:
-            #self.driver.get_screenshot_as_file("C:/Users/niran/PycharmProjects/python_Coursera/com_CE_Utilities/screenshot.png")
-            #assert False
+
+        ss = Home.clicknd().text
+        assert "IBM Full Stack Software Developer" in ss
+        ss = Home.clicknd().text
+        if ss == "IBM Full Stack Software Developer":
+            assert True
+        else:
+            self.driver.get_screenshot_as_file("C:/Users/niran/PycharmProjects/python_Coursera/com_CE_Utilities/screenshot.png")
+            assert False
 
 
 
